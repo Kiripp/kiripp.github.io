@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Квалификация</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header_container">
+                <!-- <img class="logo_height" src="./assets/images/text_logo.svg" alt="Логотип"> -->
+                <a href="/index.html"><img class="logo_height" src="./assets/images/logo_icon.svg" alt="Логотип"></a>
+                <!-- <img src="./assets/images/logo21.jpg" alt="Логотип"> -->
+            <nav class="navigation">
+                <!-- <a href="#">Главная</a> -->
+                <a href="#">Новости</a>
+                <!-- <a href="/about.html">О компании</a> -->
+                <a href="/shared-construction.html">Долевое строительство</a>
+                <a href="#">Квалификация</a>
+                <a href="/servicies.html">Услуги</a>
+                <a href="/contacts.html">Контакты</a>
+            </nav>
+            <div class="burger-menu">
+                <span></span>
+            </div>
+            <!-- <nav class="navigation">
+                <a href="#">Новости</a>
+                <a href="/shared_construction.html">Долевое строительство</a>
+                <a href="/qualification.html">Квалификация</a>
+                <a href="/servicies.html">Услуги</a>
+                <a href="/contacts.html">Контакты</a>
+            </nav> -->
+        </div>       
+    </header>
+
+    <main>
+        <section class="section-layer header__padding">
+            <div class="container column-direction">
+                <h3 class="section_heading f-padding">Сертификаты соответствия</h3>
+                <!-- <br> -->
+                <!-- Кликабельное изображение -->
+                 <div class="qualification_container">
+                    <img src="./assets/images/certificate-1.jpg" alt="Сертификат" class="clickable-image" onclick="openModal(this)">
+                    <img src="./assets/images/certificate-2.jpg" alt="Сертификат2" class="clickable-image" onclick="openModal(this)">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer f-padding">
+        <div class="footer_fcontainer">
+            <div class="footer_contacts a_footer">
+                <img src="./assets/images/logo_icon.svg" alt="Логотип" class="logo_height"> 
+            </div>
+            <div class="footer_links align-center">
+                <a class="footer_links_bg"><img src="./assets/images/icons/icons8-telegram.svg" alt=""></a>
+                <a class="footer_links_bg" href="https://www.instagram.com/severny_bulvar?igsh=MThjb3hlc3ZudzZxZA=="><img src="./assets/images/icons/icons8-instagram.svg" alt=""></a>
+                <a class="footer_links_bg" href="viber://chat?number=%2B375336039494"><img src="./assets/images/icons/icons8-viber.svg" alt=""></a>
+            </div>
+            <div class="footer_nav_items a_footer">
+                <p>г. Брест, ул. Советская, 93-95</p>
+                <a href="tel:+375298886939"> Телефон: +375298886939</a>
+                <a href="mailto: nordkomstroj@gmail.com&body=Добрый день">E-mail: nordkomstroj@gmail.com</a>
+            </div>
+        </div>
+    </footer>
+    <footer class="copyright">
+        <div class="copyright_container justify-between">
+            <div>
+                <p>© 2024 ООО «НОРДКОМСТРОЙ», УНП: 291143636,</p>
+                <!-- <p>Банковские реквизиты: р/с BY06BELB30121504920050226000<br> открытый в ОАО «БАНК БЕЛВЭБ», сервисном офисе №100 по адресу:<br> г.Брест, ул. Ленина, д. 42  -->
+                <!-- УНП: 100010078, БИК BELBBY2X -->
+                <!-- </p> -->
+                <p>Свидетельство о регистрации №0167373 выданное 15.07.2022 Администрацией Ленинского района г.Бреста,</p>
+                <!-- <p>Адрес: 224030, Республика Беларусь, г. Брест, ул. Дзержинского, д. 38, пом.1,</p> -->
+                <!-- <p>Время работы 9:00 - 20:00 (сб, вс - выходной)</p> -->
+            </div>
+            <div>
+                <a href="">Политика конфиденциальности</a>
+                <a href="">Договор публичной офферты</a>
+            </div>
+        </div>
+    </footer>
+    <!-- <div class="copyright">© 2003-2024. ООО "НОРДКОМСТРОЙ". Все права защищены</div> -->
+    
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="fullImage">
+    </div>
+
+    <script src="assets/js/openModal.js"></script>
+    <script src="/assets/js/burger.js"></script>
+
+</body>
+</html>
