@@ -425,6 +425,12 @@ a{
     color: var(--black-800);
 }
 
+.main_subtext{
+    font-size: 4rem;
+    line-height: 4.5rem;
+    color: var(--black-800);
+}
+
 h3{
     font-size: 5rem;
     line-height: 5.5rem;
@@ -856,6 +862,13 @@ input{
 }
 
 .section_heading{
+    font-size: 5rem;
+    line-height: 5.5rem;
+    color: var(--black-800);
+    padding: 4rem 0 4rem 0;
+}
+
+.main-heading{
     font-size: 5rem;
     line-height: 5.5rem;
     color: var(--black-800);
@@ -1303,6 +1316,11 @@ input[type="checkbox"]:disabled + .checkbox-label{
         grid-template-columns: repeat(auto-fill, minmax(140px, 100%));
     }
 
+    .card-wrapper {
+        grid-column: span 2; /* Если используется Grid */
+        width: 100%; /* Если Flexbox */
+    }
+
     .column-direction{
         gap: 3rem;
     }
@@ -1390,9 +1408,20 @@ input[type="checkbox"]:disabled + .checkbox-label{
     .policy_text {
         font-size: 2.5rem;
     }
+
+    .main_subtext{
+        font-size: 5.2rem;
+        line-height: 5.2rem;
+    }
 }
 
 @keyframes burgerAnimation {
     from {opacity: 0}
     to {opacity: 1}
+}
+
+@media (hover: hover){
+    .submit-btn:hover{
+        background-color: var(--black-600);
+    }
 }
