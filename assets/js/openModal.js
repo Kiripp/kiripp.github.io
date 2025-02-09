@@ -3,6 +3,9 @@ function openModal(img) {
     const modalImg = document.getElementById("fullImage");
     modal.style.display = "block";
     modalImg.src = img.src;
+    modalImg.classList.add("no-select");
+    modal.classList.add("no-select");
+
 }
 
 function closeModal() {

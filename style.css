@@ -88,7 +88,7 @@ body::-webkit-scrollbar {
     display: flex;
     /* justify-content: space-between; */
     /* align-items: center; */
-    padding-bottom: 10rem;
+    padding-bottom: 5rem;
 }
 
 .logo_height{
@@ -101,6 +101,24 @@ body::-webkit-scrollbar {
     justify-content: space-between;
     text-wrap: nowrap;
     align-items: center;
+}
+
+.navigation a{
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 4px;
+}
+
+.navigation a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--black-800);
+    transform: scaleX(0);
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .mobile-nav{
@@ -156,6 +174,10 @@ body::-webkit-scrollbar {
 
 .unscroll{
     overflow: hidden;
+}
+
+.no-select {
+    user-select: none; /* Запрещает выделение текста */
 }
 
 .icon{
@@ -263,7 +285,14 @@ body::-webkit-scrollbar {
     border-radius: 12px;
     /* background-color: var(--black-800); */
     background-color: var(--black-700);
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
+
+.footer_links_bg:hover{
+    background-color: var(--black-800);
+    transform: scale(1.02);
+}
+
 
 .footer_fcontainer{
     display: flex;
@@ -311,10 +340,15 @@ body::-webkit-scrollbar {
     border-radius: 50%;
 }
 
-.a_footer *{
-    color: var(--black-650);
+.a_footer{
+    color: var(--black-800);
     font-size: 2rem;
     /* opacity: .8;     */
+}
+
+.p_footer{
+    color: var(--black-650);
+    font-size: 2rem;
 }
 
 a{
@@ -438,10 +472,11 @@ h3{
 }
 
 .p_description{
-    font-size: 2.25rem;
+    font-size: 2.7rem;
     line-height: 3rem;
     /* color: white; */
     color: var(--black-800);
+    text-wrap: pretty;
     /* opacity: .8; */
 }
 
@@ -661,14 +696,16 @@ input{
 .submit-btn{
     color: var(--black-200);
     margin-top: 1rem;
-    background-color: var(--black-1000);
+    background-color: var(--black-800);
     font-size: 2.25rem;
+    transition: background-color 0.3s ease;
     /* background-color: #8FBCD9; */
     /* background-color: #e4ebf3; */
 }
 
 .submit-btn:hover{
     background-color: var(--black-600);
+    /* color: var(--black-100); */
 }
 
 .contacts-container {
@@ -922,7 +959,7 @@ input{
     margin: 4rem 0;
 }
 .services-section h2 {
-    font-size: 2.5rem;
+    font-size: 4rem;
     margin-bottom: 2rem;
     text-align: center;
     border-bottom: 2px solid var(--black-400);
@@ -1013,8 +1050,24 @@ input{
     gap: 5rem;
 }
 
+.description_top_border{
+    border-top: 1px solid var(--black-100);
+}
+
+.description_right_border{
+    border-right: 1px solid var(--black-100);
+}
+
+.description_bottom_border{
+    border-bottom: 1px solid var(--black-100);
+}
+
+.description_left_border{
+    border-left: 1px solid var(--black-100);
+}
+
 .description_heading{
-    padding: 2rem 0 4rem 0;
+    padding: 2rem 0 4rem 3rem;
 
 }
 
@@ -1027,6 +1080,7 @@ input{
     display: flex;
     gap: 2rem;
     flex-direction: column;
+    align-content: center;
 }
 
 
@@ -1035,6 +1089,7 @@ input{
     flex-direction: row;
     align-items: center; /* Центрирование иконки и текста */
     gap: 1rem;
+    padding-left: 3rem;
 }
 
 .description__i {
@@ -1144,7 +1199,7 @@ input[type="checkbox"]:disabled + .checkbox-label{
         overflow-y: hidden;
         padding: 50px 40px;
         background-color: black;
-        animation: burgerAnimation 0.4s;
+        animation: burgerAnimation 0.2s;
         justify-content: flex-start;
         align-items: start;
         gap: 40px;
@@ -1209,8 +1264,29 @@ input[type="checkbox"]:disabled + .checkbox-label{
     }
 
     .description_heading{
-        font-size: 4.5rem;
-        padding: 2rem 0 2rem 0;
+        font-size: 4rem;
+        padding: 2rem 0 2rem 1rem;
+        line-height: 4rem;
+    }
+
+    .description__pair{
+        padding-left: 1rem;
+    }
+
+    .copyright p{
+        text-wrap-style: pretty;
+    }
+
+    .underlined {
+        text-wrap: nowrap;
+    }
+
+    .contacts_address{
+        line-height: 2.1rem;
+    }
+
+    .contacts-list{
+        overflow-y: hidden;
     }
 }
 
@@ -1236,7 +1312,7 @@ input[type="checkbox"]:disabled + .checkbox-label{
         overflow-y: hidden;
         padding: 50px 40px;
         background-color: black;
-        animation: burgerAnimation 0.4s;
+        animation: burgerAnimation 0.2ss;
         justify-content: flex-start;
         align-items: start;
         gap: 32px;
@@ -1283,6 +1359,7 @@ input[type="checkbox"]:disabled + .checkbox-label{
 
     .description{
         flex-direction: column;
+        border: 0;
     }
     
     .footer_fcontainer{
@@ -1326,7 +1403,7 @@ input[type="checkbox"]:disabled + .checkbox-label{
     }
 
     .h1_main{
-        font-size: 8rem;
+        font-size: 7.5rem;
     }
 
     .description .description__content:first-child {
@@ -1410,9 +1487,39 @@ input[type="checkbox"]:disabled + .checkbox-label{
     }
 
     .main_subtext{
-        font-size: 5.2rem;
-        line-height: 5.2rem;
+        font-size: 3.5rem;
+        /* text-wrap: pretty; */
+        /* line-height: 5.2rem; */
     }
+
+    .card h3{
+        font-size: 3.5rem;
+    }
+
+    .card p{
+        font-size: 2.5rem;
+    }
+
+    .description_heading{
+        padding: 2rem 0 2rem 0;
+    }
+
+    .description__pair{
+        padding-left: 0;
+    }
+
+    .a_footer{
+        font-size: 2.5rem;
+    }
+    
+    .p_footer{
+        font-size: 2.5rem;
+    }
+
+    .underlined {
+        text-wrap: nowrap;
+    }
+
 }
 
 @keyframes burgerAnimation {
@@ -1420,7 +1527,18 @@ input[type="checkbox"]:disabled + .checkbox-label{
     to {opacity: 1}
 }
 
+/* @media (hover: hover){
+    .submit-btn:hover{
+        background-color: var(--black-600);
+    }
+} */
+
+
 @media (hover: hover){
+    .navigation a:hover::after {
+        transform: scaleX(1);
+    }
+
     .submit-btn:hover{
         background-color: var(--black-600);
     }
