@@ -203,7 +203,7 @@ body::-webkit-scrollbar {
 
 
 .main-bg{
-    background-image: url(./assets/images/mian_bg.png);
+    background-image: url(./assets/images/main-background.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -214,7 +214,7 @@ body::-webkit-scrollbar {
 }
 
 .second-bg{
-    background-image: url(./assets/images/2page_bg.png);
+    background-image: url(./assets/images/houses-background.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1073,7 +1073,9 @@ input{
 
 .description__icon{
     width: 68.75rem;
-    background-size: cover;
+    /* height: 100%; */
+    /* background-size: cover; */
+    aspect-ratio: 1.6 / 1;
 }
 
 .description__content{
@@ -1090,6 +1092,10 @@ input{
     align-items: center; /* Центрирование иконки и текста */
     gap: 1rem;
     padding-left: 3rem;
+}
+
+.description__pair_padding{
+    padding-left: 0;
 }
 
 .description__i {
@@ -1257,6 +1263,9 @@ input[type="checkbox"]:disabled + .checkbox-label{
 
     .description__icon{
         max-width: 50%;
+        /* aspect-ratio: 1.5 / 1; */
+        /* height: 100%; */
+        /* object-fit: cover; */
     }
 
     .main-bg{
@@ -1272,6 +1281,10 @@ input[type="checkbox"]:disabled + .checkbox-label{
     .description__pair{
         padding-left: 1rem;
     }
+
+    .description__pair_padding{
+        padding-left: 0;
+    }    
 
     .copyright p{
         text-wrap-style: pretty;
