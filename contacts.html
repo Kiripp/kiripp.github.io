@@ -222,21 +222,26 @@
     <script src="/assets/js/map.js"></script>
     <script src="/assets/js/accordion.js"></script>
     <script src="/assets/js/burger.js"></script>
+    <script src="/assets/js/mapClick.js"></script>
+
     <script>
         const form = document.getElementById("form");
+        const sendButton = document.getElementById("submit"); // Убедись, что у кнопки есть этот ID
 
          form.addEventListener("submit", event => {
          event.preventDefault();
-        //  const sendButton = document.getElementById('send');
-        //  sendButton.disabled = true;
-        //  sendButton.firstElementChild.innerHTML = 'Loading...';
+
          const formData = new FormData(form);
-         const name = formData.get("name");
-         const phone = formData.get("phone");
-         const email = formData.get("email");
+         const name = formData.get("name").trim();
+         const phone = formData.get("phone").trim();
+         const email = formData.get("email").trim();
+
          const token = "7081860884:AAGWC9XRjmm7wLLy2ixJABqyHyh_xytqcG0";
          const chatId = "-4733081096";
          const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&parse_mode=html&text=Person: ${name}%0AEmail: ${email}%0APhone: ${phone}%0A`;
+
+         sendButton.disabled = true; // Делаем кнопку неактивной на время отправки
+        sendButton.value = "Отправка..."; // Меняем текст кнопки
 
          fetch(url, { method: "POST" })
              .then(response => {
@@ -244,19 +249,23 @@
              form.reset(); // Очищаем форму после успешной отправки
             //  document.querySelectorAll('input').forEach(el => el.value = '');
             //  document.querySelector('textarea').value = '';
-            //  sendButton.firstElementChild.innerHTML = 'OK!';
-            //  setTimeout(function(){
-            //      sendButton.disabled = false;
-            //      sendButton.firstElementChild.innerHTML = 'Get Estimate'; 
-            //  }, 1500);
+             sendButton.value = 'Отправлено!';
+            //  sendButton.style.color = "#292929";
+            // //  sendButton.firstElementChild.style.color = '#292929';
+             setTimeout(function(){
+                 sendButton.disabled = false;
+                 sendButton.value = 'Отправить';
+                 sendButton.style.color = "#292929";
+            //     //  sendButton.firstElementChild.style.color = '#292929';
+              }, 1500);
              })
              .catch(error => {
                  document.querySelectorAll('input').forEach(el => el.value = '');
              document.querySelector('textarea').value = '';
-                 sendButton.firstElementChild.innerHTML = 'Something Wrong';
+                 sendButton.value = 'Что-то пошло не так';
              setTimeout(function(){
                  sendButton.disabled = false;
-                 sendButton.firstElementChild.innerHTML = 'Get Estimate'; 
+                 sendButton.value = 'Отправить'; 
              }, 1500);
              });
          });

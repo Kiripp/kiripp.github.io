@@ -203,7 +203,7 @@ body::-webkit-scrollbar {
 
 
 .main-bg{
-    background-image: url(./assets/images/main-background.png);
+    background-image: url(./assets/images/main-background.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -214,7 +214,7 @@ body::-webkit-scrollbar {
 }
 
 .second-bg{
-    background-image: url(./assets/images/houses-background.png);
+    background-image: url(./assets/images/houses-background.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1301,6 +1301,10 @@ input[type="checkbox"]:disabled + .checkbox-label{
     .contacts-list{
         overflow-y: hidden;
     }
+
+    .map:not(.is-active) * {
+        pointer-events: none;
+    }
 }
 
 @media screen and (max-width: 767px){
@@ -1533,7 +1537,10 @@ input[type="checkbox"]:disabled + .checkbox-label{
         text-wrap: nowrap;
     }
 
-}
+    .map:not(.is-active) * {
+        pointer-events: none;
+    }
+}   
 
 @keyframes burgerAnimation {
     from {opacity: 0}

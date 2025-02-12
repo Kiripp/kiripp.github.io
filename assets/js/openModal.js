@@ -6,8 +6,17 @@ function openModal(img) {
     modalImg.classList.add("no-select");
     modal.classList.add("no-select");
 
+    document.addEventListener("keydown", handleEscape);
 }
 
 function closeModal() {
     document.getElementById("imageModal").style.display = "none";
+    document.removeEventListener("keydown", handleEscape);
+
+}
+
+function handleEscape(event) {
+    if (event.key === "Escape") {
+        closeModal();
+    }
 }
