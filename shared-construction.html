@@ -154,7 +154,7 @@
                                     filter_7
                                 </span>
                             </div>
-                            <p class="description__p pre-wrap">7 вариантов планировок.</p>
+                            <p class="description__p pre-wrap">7 <a href="/assets/images/docs/ЖК_СЕВЕРНЫЙ_БУЛЬВАР_КАТАЛОГ_ПЛАНИРОВОК.pdf" id="pdf-link">вариантов</a> планировок.</p>
                         </div>
                         <div class="description__pair">
                             <div class="description__i">
@@ -318,6 +318,28 @@
     </footer>
     <!-- <script src="./script.js"></script> -->
     <script src="/assets/js/burger.js"></script>
+
+    <script>
+        document.getElementById("pdf-link").addEventListener("click", function (event) {
+          event.preventDefault(); // Отменяем стандартное поведение ссылки
+      
+          const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+          const pdfUrl = "/assets/images/docs/ЖК_СЕВЕРНЫЙ_БУЛЬВАР_КАТАЛОГ_ПЛАНИРОВОК.pdf";
+      
+          if (isMobile) {
+            // На мобильных открываем PDF в новой вкладке
+            window.open(pdfUrl, "_blank");
+          } else {
+            // На ПК загружаем файл
+            const link = document.createElement("a");
+            link.href = pdfUrl;
+            link.download = "Планировки.pdf"; // Задаём имя файла при скачивании
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+          }
+        });
+      </script>
 
     <!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script> -->
 

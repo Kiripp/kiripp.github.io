@@ -579,7 +579,7 @@ h3{
     overflow:hidden;
     opacity: 0;
     height: 0px;
-    max-height: 500px;
+    max-height: 600px;
     /* visibility: hidden; */
     transition: opacity .3s, height .3s;
 }
@@ -607,7 +607,7 @@ h3{
 
 .accordion-item__list li{
     position: relative;
-    margin-bottom: 15px; /* Между строками */
+    margin-bottom: 8px; /* Между строками */
     font-size: 2.25rem;
 }
 
@@ -1116,11 +1116,19 @@ input{
 
 .description__p {
     font-size: 2.5rem;
-    margin: 0; /* Убираем отступы */
+    margin: 0;
 }
 
+.description__p a {
+    font-size: 2.55rem;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease;
+}
 
-
+.description__p:hover a {
+    border-bottom: 2px solid var(--black-800); 
+}
 
 /* card gradient  */
 /* .card-container:hover .card {
@@ -1296,6 +1304,7 @@ input[type="checkbox"]:disabled + .checkbox-label{
 
     .contacts_address{
         line-height: 2.1rem;
+        text-wrap-style: pretty;
     }
 
     .contacts-list{
@@ -1304,6 +1313,14 @@ input[type="checkbox"]:disabled + .checkbox-label{
 
     .map:not(.is-active) * {
         pointer-events: none;
+    }
+
+    .map {
+        min-height: 40rem;
+    }
+
+    .contacts-container{
+        height: 40rem;
     }
 }
 
@@ -1366,6 +1383,9 @@ input[type="checkbox"]:disabled + .checkbox-label{
 
     .contact-details{
         padding-top: 7rem;
+        text-wrap-style: pretty;
+        width: 100%;
+
     }
 
     .container{
@@ -1540,6 +1560,14 @@ input[type="checkbox"]:disabled + .checkbox-label{
     .map:not(.is-active) * {
         pointer-events: none;
     }
+    
+    .accordion-item__content{
+        max-height: 800px;
+    }
+
+    .accordion-item__list li{
+        text-wrap-style: pretty;
+    }  
 }   
 
 @keyframes burgerAnimation {

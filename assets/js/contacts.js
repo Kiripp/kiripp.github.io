@@ -11,11 +11,12 @@ function showDetails(contactId, coords) {
             <p class="contacts_address">Офис продаж и администрация г. Брест, ул. Советская, 93-95</p>
             <p class="contacts_number">Режим работы: <br>Пн - Пт: 9:00 - 20:00</p>
             <p class="contacts_number">Cб: 9:00 - 18:00</p>
-            <p class="contacts_number">Телефоны:<br>+375 33 603 94 94,<br>+375 162 40-77-00, 
-            <br>+375 162 32-22-44, 
-            <br>+375 162 35-05-07, 
-            <br>+375 162 35-05-08.
-            </p>
+            <p class="contacts_number">Телефоны:</p>
+            <p class="contacts_number">+375 33 603 94 94</p>
+            <p class="contacts_number">+375 162 40-77-00</p>
+            <p class="contacts_number">+375 162 32-22-44</p>
+            <p class="contacts_number">+375 162 35-05-07</p>
+            <p class="contacts_number">+375 162 35-05-08</p>
         `;
     } else if (contactId === 2) {
         detailsContent.innerHTML = `
