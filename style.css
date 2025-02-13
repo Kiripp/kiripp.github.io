@@ -1562,8 +1562,4 @@ input[type="checkbox"]:disabled + .checkbox-label{
     .submit-btn:hover{
         background-color: var(--black-600);
     }
-
-    .map:not(.is-active) * {
-        pointer-events: none;
-    }
 }
