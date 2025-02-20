@@ -7,7 +7,7 @@ function initMap() {
 
     map = new ymaps.Map("map", {
         center: [52.093754, 23.685107], // Начальные координаты
-        zoom: 11,
+        zoom: 13,
         controls: ['zoomControl', 'typeSelector']
     });
 
@@ -18,12 +18,12 @@ function initMap() {
     // ];
 
     const contacts = [
-        { coords: [52.088528, 23.694813], 
+        { coords: [52.088569, 23.694961], 
             content: `
                 <strong class="balloon_strong_text">Офис продаж и администрация г. Брест, ул. Советская, 93-95</strong><br>
                 <p class="balloon_p_text">Режим работы:<br>
-                Пн - Пт: 9:00 - 19:00<br>
-                Сб: 9:00-15:00</p>
+                Пн - Пт: 9:00 - 20:00<br>
+                Сб: 9:00-18:00</p>
                 <p class="balloon_p_text">Телефоны:<br>
                 +375 162 53 14 18, <br>
                 +375 162 53-14-22,<br>

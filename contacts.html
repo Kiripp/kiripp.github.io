@@ -13,9 +13,7 @@
         <div class="header_container">
             <a href="/index.html"><img class="logo_height" src="./assets/images/logo_icon.svg" alt="Логотип"></a>
             <nav class="navigation">
-                <!-- <a href="#">Главная</a> -->
-                <a href="#">Новости</a>
-                <!-- <a href="/about.html">О компании</a> -->
+                <a href="#">Предложения</a>
                 <a href="/shared-construction.html">Долевое строительство</a>
                 <a href="/qualification.html">Квалификация</a>
                 <a href="/servicies.html">Услуги</a>
@@ -30,168 +28,98 @@
         <section class="section-layer header__padding">
             <div class="container column-direction">
                 <h3 class="section_heading">Контакты</h3>
+                <p class="contacts__subtext">Общество с ограниченной ответственностью «Нордкомстрой» (ООО «Нордкомстрой») выступает в роли арендодателя коммерческих и складских помещений, а также других видов недвижимости.</p>
                 <div class="map__container">
-                    <!-- <div class="map__wrapper"> -->
                         <div class="map__shadow">
                         <div id="map" class="map"></div>
-                        <!-- </div>    -->
                     </div>
-                    <!-- <div class="map__shadow"></div> -->
                 </div>
-                <p class="contacts__subtext">Общество с ограниченной ответственность «Нордкомстрой» с 2013 года выступает в роли арендодателя, предоставляющего свою собственность в аренду другим лицам или организациям, а именно коммерческих и складских помещений и других видов недвижимости.</p>
-                <!-- <div>
-                    <h5>Офис продаж недвижимости</h5>
-                </div> -->
             </div>
         </section>
-        <section class="section-layer">        
-            <section class="container justify-center column-direction" id="accordion">
-                <div class="accordion-item">
-                    <div class="accordion-item__heading">
-                        <span class="accordion-heading  p_accordion_heading">Офис продаж и администрация</span>
-                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g id="icon / plus">
-                                <path id="Vector" fill-rule="evenodd" clip-rule="evenodd" d="M17.1384 6.86225C16.9431 6.66699 16.6289 6.66699 16.0003 6.66699C15.3718 6.66699 15.0575 6.66699 14.8623 6.86225C14.667 7.05752 14.667 7.37179 14.667 8.00033V14.667H8.00033C7.37179 14.667 7.05752 14.667 6.86225 14.8623C6.66699 15.0575 6.66699 15.3718 6.66699 16.0003C6.66699 16.6289 6.66699 16.9431 6.86225 17.1384C7.05752 17.3337 7.37179 17.3337 8.00033 17.3337H14.667V24.0003C14.667 24.6289 14.667 24.9431 14.8623 25.1384C15.0575 25.3337 15.3718 25.3337 16.0003 25.3337C16.6289 25.3337 16.9431 25.3337 17.1384 25.1384C17.3337 24.9431 17.3337 24.6289 17.3337 24.0003V17.3337H24.0003C24.6289 17.3337 24.9431 17.3337 25.1384 17.1384C25.3337 16.9431 25.3337 16.6289 25.3337 16.0003C25.3337 15.3718 25.3337 15.0575 25.1384 14.8623C24.9431 14.667 24.6289 14.667 24.0003 14.667H17.3337V8.00033C17.3337 7.37179 17.3337 7.05752 17.1384 6.86225Z" />
-                            </g>
-                        </svg>
-                    </div>
-                    <div class="accordion-item__content">
-                        <ul class="accordion-item__list">
-                            <li>
-                                <svg class="icon" viewBox="0 0 24 24">
-                                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
-                                </svg>
-                                Адрес: г. Брест, ул. Советская, 93-95
-                            </li>
-                            <li>
-                                <svg class="icon" viewBox="0 0 24 24">
-                                    <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
-                                </svg>
-                                Время работы:
-                                <ul>
-                                     <li>Пн - Пт: 9:00 - 20:00</li>
-                                     <li>Cб: 9:00 - 18:00</li>
-                                     <li>Вс. – выходной</li>
-                                </ul>
-                            </li>
-                            <li>
-                                <svg class="icon" viewBox="0 0 24 24">
-                                    <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
-                                </svg>
-                                Телефоны:
-                                <ul>
-                                    <li>+375 (33) 603-94-94</li>
-                                    <li>+375 (162) 40-77-00</li>
-                                    <li>+375 (162) 35-05-08</li>
-                                    <li>+375 (162) 32-22-44</li>
-                                    <li>+375 (162) 35-05-07</li>
-                                </ul>
-                            </li>
-                            <li>
-                                <svg class="icon" viewBox="0 0 24 24">
-                                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-                                </svg>
-                                Электронная почта:
-                                <ul>
-                                    <li><a href="mailto:nordkomstroj@gmail.com">nordkomstroj@gmail.com</a></li>
-                                    <li><a href="mailto:alfa-active@mail.ru">alfa-active@mail.ru</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <div class="accordion-item__heading">
-                        <span class="accordion-heading p_accordion_heading">Офис продаж</span>
-                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g id="icon / plus">
-                                <path id="Vector" fill-rule="evenodd" clip-rule="evenodd" d="M17.1384 6.86225C16.9431 6.66699 16.6289 6.66699 16.0003 6.66699C15.3718 6.66699 15.0575 6.66699 14.8623 6.86225C14.667 7.05752 14.667 7.37179 14.667 8.00033V14.667H8.00033C7.37179 14.667 7.05752 14.667 6.86225 14.8623C6.66699 15.0575 6.66699 15.3718 6.66699 16.0003C6.66699 16.6289 6.66699 16.9431 6.86225 17.1384C7.05752 17.3337 7.37179 17.3337 8.00033 17.3337H14.667V24.0003C14.667 24.6289 14.667 24.9431 14.8623 25.1384C15.0575 25.3337 15.3718 25.3337 16.0003 25.3337C16.6289 25.3337 16.9431 25.3337 17.1384 25.1384C17.3337 24.9431 17.3337 24.6289 17.3337 24.0003V17.3337H24.0003C24.6289 17.3337 24.9431 17.3337 25.1384 17.1384C25.3337 16.9431 25.3337 16.6289 25.3337 16.0003C25.3337 15.3718 25.3337 15.0575 25.1384 14.8623C24.9431 14.667 24.6289 14.667 24.0003 14.667H17.3337V8.00033C17.3337 7.37179 17.3337 7.05752 17.1384 6.86225Z" />
-                            </g>
-                        </svg>
-                    </div>
-                    <div class="accordion-item__content">
-                        <ul class="accordion-item__list">
-                            <li>
-                                <svg class="icon" viewBox="0 0 24 24">
-                                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
-                                </svg>
-                                Адрес: г. Брест, ул. Республиканская, д. 10 «Б», пом. 55
-                            </li>
-                            <li>
-                                <svg class="icon" viewBox="0 0 24 24">
-                                    <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
-                                </svg>
-                                Время работы:
-                                <ul>
-                                     <li>Пн - Пт: 9:00 - 19:00</li>
-                                     <li>Cб: 9:00 - 15:00</li>
-                                     <li>Вс. – выходной</li>
-                                </ul>
-                            </li>
-                            <li>
-                                <svg class="icon" viewBox="0 0 24 24">
-                                    <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
-                                </svg>
-                                Телефоны:
-                                <ul>
-                                    <li>+375 (162) 53-14-18</li>
-                                    <li>+375 (162) 53-14-22</li>
-                                    <li>+375 (162) 53-22-99</li>
-                                </ul>
-                            </li>
-                            <li>
-                                <svg class="icon" viewBox="0 0 24 24">
-                                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-                                </svg>
-                                Электронная почта: <a href="mailto:info@bugrealt.by">info@bugrealt.by</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-        </section>
-        <!-- <section class="section-layer">
-            <div class="container">
+        <section class="section-layer">
+            <div class="container column-direction">
+                <h3 class="contacts__heading">График работы</h3>
+
                 <div class="contact-card__wrapper">
                     <div class="contact-card__content">
+                        <span class="contact-card__content-name">Офис продаж и администрация</span>
                         <div class="contact-card__content-box">
-                            <span class="contact-card__content-box-description_phone">Долевое строительство</span>
-                            <span class="contact-card__content-box-param">+375 (162) 35 00 91</span>
+                            <span class="contact-card__content-box-description">Адрес</span>
+                            <span class="contact-card__content-box-param">г. Брест, ул. Советская, 93-95</span>
                         </div>
                         <div class="contact-card__content-box">
-                            <span class="contact-card__content-box-description_phone">Долевое строительство</span>
-                            <span class="contact-card__content-box-param">+375 (162) 35 00 91</span>
+                            <span class="contact-card__content-box-description">Время работы</span>
+                            <span class="contact-card__content-box-param">Пн - Пт: с 9:00 до 20:00</span>
+                            <span class="contact-card__content-box-param">Сб: с 9:00 до 18:00</span>
                         </div>
                         <div class="contact-card__content-box">
-                            <span class="contact-card__content-box-description_phone">Долевое строительство</span>
-                            <span class="contact-card__content-box-param">+375 (162) 35 00 91</span>
+                            <span class="contact-card__content-box-description">Телефоны</span>
+                            <span class="contact-card__content-box-param"><a href="tel:375336039494">+375 (33) 603 94 94</a></span>
+                            <span class="contact-card__content-box-param"><a href="tel:375162407700">+375 (162) 40 77 00</a></span>
+                            <span class="contact-card__content-box-param"><a href="tel:375162350508">+375 (162) 35 05 08</a></span>
+                            <span class="contact-card__content-box-param"><a href="tel:375162322244">+375 (162) 32 22 44</a></span>
+
                         </div>
                         <div class="contact-card__content-box">
-                            <span class="contact-card__content-box-description_phone">Долевое строительство</span>
-                            <span class="contact-card__content-box-param">+375 (162) 35 00 91</span>
+                            <span class="contact-card__content-box-description">Электронная почта</span>
+                            <span class="contact-card__content-box-param"><a href="mailto:nordkomstroj@gmail.com">nordkomstroj@gmail.com</a></span>
+                            <span class="contact-card__content-box-param"><a href="mailto:alfa-active@mail.ru">alfa-active@mail.ru</a></span>
                         </div>
                     </div>
                     <div class="contact-card__content">
+                        <span class="contact-card__content-name">Офис продаж</span>
+
                         <div class="contact-card__content-box">
-                            <span class="contact-card__content-box-description_phone">Долевое строительство</span>
-                            <span class="contact-card__content-box-param">+375 (162) 35 00 91</span>
+                            <span class="contact-card__content-box-description">Адрес</span>
+                            <span class="contact-card__content-box-param">г. Брест, ул. Республиканская, д. 10 «Б», пом. 55</span>
                         </div>
                         <div class="contact-card__content-box">
-                            <span class="contact-card__content-box-description_phone">Долевое строительство</span>
-                            <span class="contact-card__content-box-param">+375 (162) 35 00 91</span>
+                            <span class="contact-card__content-box-description">Время работы</span>
+                            <span class="contact-card__content-box-param">Пн - Пт: с 9:00 до 19:00</span>
+                            <span class="contact-card__content-box-param">Сб: с 9:00 до 15:00</span>
                         </div>
                         <div class="contact-card__content-box">
-                            <span class="contact-card__content-box-description_phone">Долевое строительство</span>
-                            <span class="contact-card__content-box-param">+375 (162) 35 00 91</span>
+                            <span class="contact-card__content-box-description">Телефоны</span>
+                            <span class="contact-card__content-box-param"><a href="tel:+375162531418">+375 (162) 53 14 18</a></span>
+                            <span class="contact-card__content-box-param"><a href="tel:+375162531422">+375 (162) 53 14 22</a></span>
+                            <span class="contact-card__content-box-param"><a href="tel:+375162532299">+375 (162) 53 22 99</a></span>
+
                         </div>
                         <div class="contact-card__content-box">
-                            <span class="contact-card__content-box-description_phone">Долевое строительство</span>
-                            <span class="contact-card__content-box-param">+375 (162) 35 00 91</span>
+                            <span class="contact-card__content-box-description">Электронная почта</span>
+                            <span class="contact-card__content-box-param"><a href="mailto:info@bugrealt.by">info@bugrealt.by</a></span>
+                        </div>
+                    </div>
+                    <div class="contact-card__contact">
+                        <div class="contact-card__content-box">
+                            <span class="contact-card__content-box-description">Директор</span>
+                            <span class="contact-card__content-box-param">Попко Анатолий Анатольевич</span>
+                            <!-- <span class="contact-card__content-box-param"><a href="tel:+375162532299">+375 (29) 888 69 39</a></span> -->
+                        </div>
+                    </div>
+                    <div class="contact-card__contact">
+                        <div class="contact-card__content-box">
+                            <span class="contact-card__content-box-description">Электронная почта</span>
+                            <span class="contact-card__content-box-param"><a href="mailto:info@bugrealt.by">info@bugrealt.by</a></span>
+                        </div>
+                    </div>
+                    <div class="contact-card__contact">
+                        <div class="contact-card__content-box">
+                            <span class="contact-card__content-box-description">Директор</span>
+                            <span class="contact-card__content-box-param">Попко Анатолий Анатольевич</span>
+                            <!-- <span class="contact-card__content-box-param"><a href="tel:+375162532299">+375 (29) 888 69 39</a></span> -->
+                        </div>
+                    </div>
+                    <div class="contact-card__contact">
+                        <div class="contact-card__content-box">
+                            <span class="contact-card__content-box-description">Директор</span>
+                            <span class="contact-card__content-box-param">Попко Анатолий Анатольевич</span>
+                            <!-- <span class="contact-card__content-box-param"><a href="tel:+375162532299">+375 (29) 888 69 39</a></span> -->
                         </div>
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section>
 
         <section class="section-layer">
             <div class="container align-start">
