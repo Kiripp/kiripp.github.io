@@ -1747,7 +1747,6 @@ input[type="checkbox"]:disabled + .checkbox-label{
     .contact-card__content a {
         font-size: 2.8rem;
     }
-
 }   
 
 @keyframes burgerAnimation {
