@@ -1380,9 +1380,6 @@ input[type="checkbox"]:disabled + .checkbox-label{
 
     .description__icon{
         max-width: 50%;
-        /* aspect-ratio: 1.5 / 1; */
-        /* height: 100%; */
-        /* object-fit: cover; */
     }
 
     .main-bg{
