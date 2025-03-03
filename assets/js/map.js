@@ -11,12 +11,6 @@ function initMap() {
         controls: ['zoomControl', 'typeSelector']
     });
 
-    // Массив с координатами и описанием точек
-    // const contacts = [
-    //     { coords: [52.088528, 23.694813], content: 'Офис продаж и администрация г. Брест, ул. Советская, 93-95' },
-    //     { coords: [52.102766, 23.677686], content: 'Офис продаж г. Брест, ул. Республиканская, 10Б, пом. 55' }
-    // ];
-
     const contacts = [
         { coords: [52.088569, 23.694961], 
             content: `
@@ -105,4 +99,32 @@ function closeDetails() {
 // Проверка наличия API Yandex.Maps и вызов инициализации карты
 if (typeof ymaps !== 'undefined') {
     ymaps.ready(initMap);
+}
+
+function initBoulevardMap() {
+    const mapContainer = document.getElementById('boulevard-map');
+    if (!mapContainer) return; // Проверяем наличие контейнера с ID 'map'
+
+    map = new ymaps.Map("boulevard-map", {
+        center: [52.107858, 23.674823], // Начальные координаты
+        zoom: 15.2,
+        controls: ['zoomControl', 'typeSelector']
+    });
+
+    const contacts = [
+        { coords: [52.107932, 23.674477], 
+            content: `
+                <strong class="balloon_strong_text">Жилой дом г. Брест, улица Олега Кошевого, 2В</strong><br>
+            ` }
+    ];
+
+    // Добавление меток на карту
+    contacts.forEach(contact => {
+        const placemark = new ymaps.Placemark(contact.coords, { balloonContent: contact.content });
+        map.geoObjects.add(placemark);
+    });
+}
+
+if (typeof ymaps !== 'undefined') {
+    ymaps.ready(initBoulevardMap);
 }

@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script> -->
     <title>НОРДКОМСТРОЙ</title>
@@ -15,7 +16,7 @@
         <div class="header_container">
                 <a href="/index.html"><img class="logo_height" src="./assets/images/logo_icon.svg" alt="Логотип Нордкомстрой"></a>
             <nav class="navigation">
-                <a href="/#">Предложения</a>
+                <a href="/offers.html">Предложения</a>
                 <a href="/shared-construction.html">Долевое строительство</a>
                 <a href="/qualification.html">Квалификация</a>
                 <a href="/servicies.html">Услуги</a>
@@ -36,17 +37,24 @@
                     <p class="p_description">Срок ввода объекта в эксплуатацию 10 июля 2025г.</p>
                 </div>
 
-                <img class="no-select boulevard-image" src="./assets/images/shared-1.webp" alt="Изображение жилого комплекса Северный бульвар.">
+                <img class="no-select boulevard-image" src="./assets/images/boulevard.webp" alt="Изображение жилого комплекса Северный бульвар.">
                 
+                <h3 class="section_heading">Местоположение</h3>
+                <div class="map__container">
+                    <div class="map__shadow">
+                        <div id="boulevard-map" class="boulevard-map"></div>
+                    </div>
+                </div>
+
                 <div class="file_wrapper">
-                    <h3 class="form_heading">Документы</h3>
+                    <h3 class="file_heading">Документы</h3>
                     <div class="file__pair">
                         <div class="file__i">
                             <span class="material-symbols-outlined">
                                 download
                             </span>
                         </div>
-                        <a class="footer_links" href="/assets/images/docs/project-declaration.pdf" target="_blank">Проектная декларация</a>
+                        <a class="footer_links" href="/assets/images/docs/проектная-декларация.pdf" target="_blank">Проектная декларация</a>
                     </div>
                     <div class="file__pair">
                         <div class="file__i">
@@ -54,7 +62,7 @@
                                 download
                             </span>
                         </div>
-                        <a class="footer_links" href="">Здесь будет ссылка на загрузку документа</a>
+                        <a class="footer_links" href="/assets/images/docs/1-этаж-4-листа.pdf" target="_blank">План. 1 этаж</a>
                     </div>
                     <div class="file__pair">
                         <div class="file__i">
@@ -62,7 +70,7 @@
                                 download
                             </span>
                         </div>
-                        <a class="footer_links" href="">Здесь будет ссылка на загрузку документа</a>
+                        <a class="footer_links" href="/assets/images/docs/2-этаж-4-листа.pdf" target="_blank">План. 2 этаж</a>
                     </div>
                     <div class="file__pair">
                         <div class="file__i">
@@ -70,7 +78,23 @@
                                 download
                             </span>
                         </div>
-                        <a class="footer_links" href="">Здесь будет ссылка на загрузку документа</a>
+                        <a class="footer_links" href="/assets/images/docs/3-4-этаж-8-листов.pdf" target="_blank">План. 3 - 4 этаж</a>
+                    </div>
+                    <div class="file__pair">
+                        <div class="file__i">
+                            <span class="material-symbols-outlined">
+                                download
+                            </span>
+                        </div>
+                        <a class="footer_links" href="/assets/images/docs/5-8-этаж-16-листов.pdf" target="_blank">План. 5 - 8 этаж</a>
+                    </div>
+                    <div class="file__pair">
+                        <div class="file__i">
+                            <span class="material-symbols-outlined">
+                                download
+                            </span>
+                        </div>
+                        <a class="footer_links" href="/assets/images/docs/каталог-планировок.pdf" target="_blank">Виды планировок</a>
                     </div>
                 </div>
             </div>
@@ -114,6 +138,11 @@
         </div>
         </footer>
     <!-- <div class="copyright">© 2003-2024. ООО "НОРДКОМСТРОЙ". Все права защищены</div> -->
-     <script src="/assets/js/accordion.js"></script>
+    <script src="/assets/js/accordion.js"></script>
+    <script src="/assets/js/map.js"></script>
+    <script src="/assets/js/mapClick.js"></script>
+    <script src="/assets/js/burger.js"></script>
+     
+
 </body>
 </html>

@@ -833,6 +833,15 @@ input:focus {
     overflow: hidden;
 }
 
+.boulevard-map{
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid var(--black-400); */
+    border-radius: 4rem;
+    overflow: hidden;
+}
+
 /* Опционально можно скрыть этот блок */
 .ymaps-2-1-79-copyrights-pane {
     display: none !important;
@@ -1372,6 +1381,14 @@ input:focus {
     gap: 3rem;
 }
 
+
+.file_heading{
+    font-size: 5rem;
+    line-height: 5.5rem;
+    color: var(--black-800);
+    padding-bottom: 5rem;
+}
+
 .file_wrapper a{
     font-size: 2.7rem;
     text-decoration: none;
@@ -1413,7 +1430,8 @@ input:focus {
 }
 
 .boulevard-image{
-    margin-top: 5rem;
+    /* margin-top: 5rem; */
+    margin: 5rem 0;
 }
 
 label:hover{
